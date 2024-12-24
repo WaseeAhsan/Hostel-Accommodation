@@ -8,9 +8,13 @@ import { NoticeController } from './notice/notice.controller';
 import { NoticeService } from './notice/notice.service';
 import { NoticeModule } from './notice/notice.module';
 import { MealModule } from './meal/meal.module';
+import { AdminModule } from './admin/admin.module';
+import { EventModule } from './event/event.module';
+import {StaffModule} from './staff/staff.module' ; 
+import {GroceryModule} from './grocery/grocery.module'
 
 @Module({
-  imports: [RoomModule, NoticeModule, MealModule],
+  imports: [RoomModule, NoticeModule, MealModule,AdminModule, EventModule , StaffModule ,  GroceryModule ],
   // controllers: [NoticeController],
   // providers: [NoticeService],
   // controllers: [AppController, RoomController],
